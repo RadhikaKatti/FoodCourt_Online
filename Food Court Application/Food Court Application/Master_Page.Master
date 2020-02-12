@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master_Page.master.cs" Inherits="Food_Court_Application.Master_Page" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Food Court</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="css/nav.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container-fluid text-center">
+        <header class="row">
+            Food Court
+        </header>
+    </div>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="Home.aspx"> Home</a></li>
+                    <li><a href="Admin_Login.aspx"><span class="glyphicon glyphicon-log-in"></span> Admin</a></li>
+                    <li><a href="Restaurant_Login.aspx"><span class="glyphicon glyphicon-log-in"></span> Restaurant</a></li>
+                    <li><a href="Customer_Login.aspx"><span class="glyphicon glyphicon-log-in"></span> Customer</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row content">
+            <form runat="server">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </form>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <footer>
+            <p>@ Food Court Application</p>
+        </footer>
+    </div>
+</body>
+</html>
